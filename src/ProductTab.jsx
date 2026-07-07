@@ -1,13 +1,20 @@
 import Product from "./Product.jsx";
+import "./ProductTab.css";
 
 function ProductTab(){
+    let styles = {
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignitems: "center",
+    };
     return (
-        <>
-            <Product title="Logitech MX Master"/>
-            <Product title="Apple Pencil (2Gen)"/>
-            <Product title="Zebronics Zeb-transformer"/>
-            <Product title="Petronics Toad 23"/>
-        </>
+        <div style={styles}>
+            <Product title="Logitech MX Master" idx={0}/>
+            <Product title="Apple Pencil (2Gen)" idx={1}/>
+            <Product title="Zebronics Zeb-transformer" idx={2}/>
+            <Product title="Petronics Toad 23" idx={3}/>
+        </div>
     );
 }
 
